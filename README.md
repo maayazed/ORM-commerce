@@ -45,6 +45,17 @@
         - stock
         - category_id
     </pre></code>
+    <pre><code>
+    TAG
+        - id
+        - tag_name
+    </pre></code>
+    <pre><code>
+    PRODUCT_TAG
+        - id
+        - product_id
+        - tag_id
+    </pre></code>
 </div>
 
 <hr>
