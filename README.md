@@ -31,7 +31,7 @@
 
 <br>
 
-<div align='center'>
+<div>
     <pre><code>
     CATEGORY
         - id
