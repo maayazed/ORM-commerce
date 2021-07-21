@@ -66,7 +66,7 @@
 
 <div>
 <h4>Instructions: </h4>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Download from repository. Node is required to initialize the index.js file. MySQL is required to create the database. App functionality and use was built depending on Insomnia.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Download from the repository. Node is required to initialize the index.js file. MySQL is required to create the database. App functionality and use were built depending on Insomnia.
     
 <br>
     
@@ -85,7 +85,7 @@
     
 <br>
     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Run server.js with node to start the application after the dependencies have been installed and the database has been seeded. The command-line will display changes in the database depending on the response satus from each url call made in Insomnia.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Run server.js with node to start the application after the dependencies have been installed and the database has been seeded. The command line will display changes in the database depending on the response status from each URL call made in Insomnia.
 </div>
 
 <hr>
