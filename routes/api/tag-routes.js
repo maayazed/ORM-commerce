@@ -63,7 +63,7 @@ router.put('/:id', async (req, res) => {
       return;
     }
 
-    res.status(200).json(putTag);
+    res.status(200).json(req.body);
   } catch (err) {
 
     res.status(500).json(err);

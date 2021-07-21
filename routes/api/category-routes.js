@@ -61,7 +61,7 @@ router.put('/:id', async (req, res) => {
       return;
     };
 
-    res.status(200).json(putCategory);
+    res.status(200).json(req.body);
   } catch (err) {
     res.status(400).json(err);
   }
