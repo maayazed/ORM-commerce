@@ -66,7 +66,7 @@
 
 <div>
 <h4>Instructions: </h4>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Download from repository. Node is required to initialize the index.js file. MySQL is required to seed the database. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Download from repository. Node is required to initialize the index.js file. MySQL is required to create the database. App functionality and use was built depending on Insomnia.
     
 <br>
     
@@ -81,11 +81,11 @@
 
 <div>
 <h4>Guide: </h4> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From the command line install the package.json dependencies. In MySQL Workbench first, run seed.sql then run schema.sql. Both .sql files are found in the db folder provided within this repository. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From the command line install the package.json dependencies. In MySQL Workbench run schema.sql. The schema file is found in the db folder provided within this repository. 
     
 <br>
     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Run index.js with node to start the application after the dependencies have been installed and the database has been seeded. The command-line prompts the user for selections and inputs from <a href='https://www.npmjs.com/package/inquirer'><code>inquirer</code></a> to enable user access and change to the database.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Run server.js with node to start the application after the dependencies have been installed and the database has been seeded. The command-line will display changes in the database depending on the response satus from each url call made in Insomnia.
 </div>
 
 <hr>
@@ -95,9 +95,9 @@
 </div>
 
 <div>
-<h4> Seeding: MySQL Workbench</h4>
-<pre><code>Select File then Open SQL Script</code></pre>
-<pre><code>Navigate to this repository folder labeled db then open both schema and seed .sql files. Run schema.sql first</code></pre>
+<h4> Seeding: MySQL Workbench and Command Line</h4>
+<pre><code>Open and execute schema.sql script in MySQL</code></pre>
+<pre><code>Run node seeds/index.js in the command line. Refer to the provided package.json file to find additonal scripts</code></pre>
 </div>
 
 <div>
