@@ -61,18 +61,29 @@ router.put('/:id', async (req, res) => {
       return;
     };
 
-    res.status(200).json(req.body);
+    res.status(200).json(putCategory);
   } catch (err) {
     res.status(400).json(err);
   }
 });
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', async (req, res) => {
   // delete a category by its `id` value
   try {
-    
-  } catch {
+    const rmCategory = await Category.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
 
+    if (!rmCategory) {
+      res.status(404).json({message: `No category found with id: ${req.params.id}!`});
+      return;
+    };
+
+    res.status(200).json({message: `Category ${req.params.id} removed!`});
+  } catch (err) {
+    res.status(400).json(err);
   }
 });
 

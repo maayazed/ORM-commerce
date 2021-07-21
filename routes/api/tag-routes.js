@@ -14,7 +14,7 @@ router.get('/', async (req, res) => {
     res.status(200).json(findAll);
   } catch (err) {
     res.status(500).json(err);
-    console.log(err);
+    // console.log(err);
   }
 });
 
@@ -34,7 +34,7 @@ router.get('/:id', async (req, res) => {
     res.status(200).json(findOne);
   } catch (err) {
     res.status(500).json(err);
-    console.log(err);
+    // console.log(err);
   }
 });
 
@@ -63,19 +63,30 @@ router.put('/:id', async (req, res) => {
       return;
     }
 
-    res.status(200).json(req.body);
+    res.status(200).json(putTag);
   } catch (err) {
 
     res.status(500).json(err);
   }
 });
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', async (req, res) => {
   // delete on tag by its `id` value
   try {
+    const rmTag = await Tag.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
 
-  } catch {
+    if (!rmTag) {
+      res.status(404).json({message: `No tag found with id: ${req.params.id}!`});
+      return;
+    };
 
+    res.status(200).json({message: `Tag ${req.params.id} removed!`});
+  } catch (err) {
+    res.status(400).json(err);
   }
 });
 
