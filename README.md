@@ -1,5 +1,5 @@
 <div align='center'>
-<h1><strong>Employee Content Management System</strong></h1>
+<h1><strong>E-Commerce Backend Model</strong></h1>
 </div>
 
 ### Badges: [![badge src!](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/licenses) ![badge src!](https://img.shields.io/badge/Language-JavaScript-yellow)
@@ -25,14 +25,26 @@
 </div>
 
 <div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Employee Content Management System is a javascript application that enables users access and changes to a company employee database. The database ran through MySQL houses three table objects: department, role, and employee.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-Commerce Backend Model is a command-line javascript application that enables users access and changes to an ecommerce database. The database ran by sequelize for MySQL follows four model classes: category, product, tag, and product tag.
             
 </div>
 
 <br>
 
 <div align='center'>
-    <img src='https://user-images.githubusercontent.com/79816212/126230008-4ddf44e1-1506-4449-abaf-232607406a72.png'>
+    <pre><code>
+    CATEGORY
+        - id
+        - category_name
+    </pre></code>
+    <pre><code>
+    PRODUCT
+        - id
+        - product_name
+        - price
+        - stock
+        - category_id
+    </pre></code>
 </div>
 
 <hr>
